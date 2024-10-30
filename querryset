@@ -1,0 +1,11 @@
+python manage. py shell
+>>> from task1. models import Buyer
+>>> Buyer. objects. count ()
+>>> Buyer. objects. create (name=" Bogdan", balance="1488", age="54")
+>>> a = Buyer. objects. get(id="6")
+>>> a. name = "Evlampiy"
+>>> a. save()
+>>> a = Buyer.objects. filter(age="54")
+>>> print(a)
+>>> a[1].delete()
+>>> print(Buyer. objects. all())
